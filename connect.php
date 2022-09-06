@@ -1,9 +1,8 @@
 
 <?php 
-    session_start();
-    
+
     $dbhost = "localhost";
-    $dbname = "blog";
+    $dbname = "pagination";
     $dbuser = 'root';
     $dbpswd = "";
 
