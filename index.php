@@ -47,8 +47,34 @@
                         </tbody>
                     </table>
             </div>
+              
+             <!-- PAGINATION -->
+              <ul class="pagination">
+                <li></li>
+
+               <?php 
+                 for ($i=1; $i<=$nbPage; $i++) { 
+                ?>
+                    <?php
+                    if($i == $current){
+                    ?>
+                          <li class ="active"><a href="?p=<?php echo $i;?>"><?php echo $i;?></a></li>
+
+                        <?php
+                        }else{
+                         ?>
+                            <li><a href="?p=<?php echo $i;?>"><?php echo $i;?></a></li>
+                            <?php
+                        }
+                   
+                    }
+                   ?>
+
+                <li></li>
+              </ul>
+
         </div>
     </div>
 </div>
 </body>
-</html>
+</html>  
